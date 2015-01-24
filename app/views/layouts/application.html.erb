@@ -6,12 +6,28 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body>
- <p class="notice"><%= notice %></p>
- <p class="alert"><%= alert %></p>
+<body id="main">
 
 
+
+ <%= render 'layouts/header' %>
+
+
+<% flash.each do |key, value| %>
+ <div class="alert alert-<%= key %>"><%= value %>
+ <% end %>
+
+<div class="container">
+<div class="col-md-7 col-md-offset-1 box">
 <%= yield %>
+</div>
+
+<div class="col-md-3 box">
+	<%= render 'layouts/sidebar' %>
+</div>
+</div>
+
+<%= render 'layouts/footer' %>
 
 </body>
 </html>

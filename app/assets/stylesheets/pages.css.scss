@@ -1,3 +1,110 @@
 // Place all the styles related to the pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+$navbar-default-bg: #000;
+$navbar-border-radius: 0;
+
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,700,800);
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300);
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+
+
+// STICKY FOOTER
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 70px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 50px;
+  background-color: #f5f5f5;
+}
+
+
+// NAVBAR
+
+.navbar a {
+	text-decoration: none;
+	color:#FB8E61;	
+}
+
+.box {
+	background:#fff;
+	margin-right:10px;
+	box-shadow:5px 5px 5px #EBEBEB;
+}
+
+.post {
+	padding:20px 10px;
+	border-bottom:1px solid #EBEBEB;
+	margin-bottom:10px;
+}
+
+#main {
+	background:#EFF0F0;
+}
+
+.read-more {
+	background:#f39c12;
+	width:100px;
+	height:30px;
+	text-align:center;
+	padding:3px;
+	box-shadow:1px 1px 1px #EFF0F0;
+}
+
+.read-more a {
+	font-family: 'Montserrat', sans-serif;
+	text-decoration:none;
+	color:#000;
+	font-size:14px;
+}
+
+.read-more a:hover {
+	background:#f39c12;
+	color:#000;
+}
+
+.post p {
+	font-weight:300;
+	font-size:14px;
+	line-height:2em;
+}
+
+.post h1 {
+	font-family: 'Raleway', sans-serif;
+	font-weight:700;
+}
+
+.post h6, .post p {
+	font-family: 'Roboto', sans-serif;
+	font-size:16px;
+
+}
+
+.post h6 {
+	font-size:16px;
+	color:#AAAAAA;
+}
+
+footer {
+	position:relative;
+	bottom:0px;
+	width:100%;
+	height:60px;
+	background:#000;
+}
+

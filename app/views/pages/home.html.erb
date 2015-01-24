@@ -1,2 +1,21 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+
+
+
+<% @posts.each do |post| %>
+<div class="post">
+        <h1><%= post.title %></h1>
+        <h6><%= post.created_at.strftime("%d %b. %Y") %></h6>
+        <p><%= post.content[0,300] %> ...</p>
+        <div class="read-more">  
+        <%= link_to 'Read More', post %>
+        </div>
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<div class="addthis_sharing_toolbox"></div>
+
+</div>
+<% end %>
+
+
+
+
+

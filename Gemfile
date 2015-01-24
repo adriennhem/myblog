@@ -17,6 +17,7 @@ gem 'coffee-rails', '~> 4.0.0'
 # Managing admin area
 gem 'activeadmin', github: 'activeadmin'
 gem 'devise'
+gem 'bootstrap-sass', '~> 3.3.3'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
