@@ -4,6 +4,12 @@
 
 $navbar-default-bg: #000;
 $navbar-border-radius: 0;
+$navbar-default-link-hover-color:#f39c12;
+$navbar-default-link-color:#fff;
+$navbar-default-brand-hover-color:#fff;
+// JUMBOTRON
+$jumbotron-bg:#fff;
+$btn-primary-bg:#f39c12;
 
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,700,800);
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,300);
@@ -60,6 +66,26 @@ input.button {
 	width:200px;
 }
 
+.box section header {
+	background:#f39c12;
+	color:#000;
+}
+
+.box section header h3 {
+	font-size:18px;
+	font-family: 'Montserrat', sans-serif;
+	padding:10px 10px;
+	text-align:center;	
+}
+
+.box section ul li {
+	padding:5px 0;
+	text-align:center;
+	list-style:none;
+}
+
+
+
 
 // NAVBAR
 
@@ -67,6 +93,15 @@ input.button {
 	text-decoration: none;
 	color:#FB8E61;	
 }
+
+.navbar-brand {
+	font-family: 'Raleway', sans-serif;
+}
+
+
+
+// POST
+
 
 .box {
 	background:#fff;
@@ -118,6 +153,7 @@ input.button {
 .post h1 {
 	font-family: 'Raleway', sans-serif;
 	font-weight:700;
+	font-size:24px;
 }
 
 .post h6, .post p {
