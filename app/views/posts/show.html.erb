@@ -1,19 +1,17 @@
 <p id="notice"><%= notice %></p>
+<div class="box-post">
+	<section>
+		<header>
+			<h2><%= @post.title %></h2>
+			<h6>Written by <%= @post.name %></h6>
+		</header>
+		<p>
+			<%= @post.content %>
+		</p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @post.name %>
-</p>
+	</section>
+	
+</div>
 
-<p>
-  <strong>Title:</strong>
-  <%= @post.title %>
-</p>
 
-<p>
-  <strong>Content:</strong>
-  <%= @post.content %>
-</p>
 
-<%= link_to 'Edit', edit_post_path(@post) %> |
-<%= link_to 'Back', root_path %>
