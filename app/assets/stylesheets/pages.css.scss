@@ -2,6 +2,8 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+$page-header-border-color:#c0c0c0;
+$navbar-height:80px;
 $navbar-default-bg: #000;
 $navbar-border-radius: 0;
 $navbar-default-link-hover-color:#f39c12;
@@ -11,6 +13,7 @@ $navbar-default-brand-hover-color:#fff;
 $jumbotron-bg:#fff;
 $btn-primary-bg:#f39c12;
 
+@import url(http://fonts.googleapis.com/css?family=Pompiere);
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,700,800);
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,300);
 @import url(http://fonts.googleapis.com/css?family=Montserrat);
@@ -67,7 +70,7 @@ input.button {
 }
 
 .box section header {
-	background:#f39c12;
+	background:#FBB829;
 	color:#000;
 }
 
@@ -84,9 +87,6 @@ input.button {
 	list-style:none;
 }
 
-
-
-
 // NAVBAR
 
 .navbar a {
@@ -100,13 +100,31 @@ input.button {
 
 
 
+// HOMEPAGE
+
+.jumbotron h3 {
+	font-family: 'Raleway', sans-serif;
+	font-weight:700;
+}
+
+.jumbotron p {
+	font-family: 'Roboto', sans-serif;
+	font-weight:300;
+	font-size:18px;
+	line-height:2em;
+}
+
+.home-header {
+
+}
+
 // POST
 
 
 .box {
 	background:#fff;
 	margin-right:10px;
-	box-shadow:5px 5px 5px #EBEBEB;
+	box-shadow:2px 2px 2px #c0c0c0;
 }
 
 .post {
@@ -120,7 +138,7 @@ input.button {
 }
 
 .read-more {
-	background:#f39c12;
+	background:#FBB829;
 	width:100px;
 	height:30px;
 	text-align:center;
@@ -136,7 +154,7 @@ input.button {
 }
 
 .read-more a:hover {
-	background:#f39c12;
+	background:#FBB829;
 	color:#000;
 }
 
@@ -178,6 +196,7 @@ footer {
 .box-post {
 	background:#fff;
 	padding:20px 30px;
+	box-shadow:2px 2px 2px #c0c0c0;
 }
 
 .box-post p {

@@ -20,6 +20,8 @@ gem 'devise'
 gem 'bootstrap-sass', '~> 3.3.3'
 gem 'gibbon', git: 'git://github.com/amro/gibbon.git'
 
+# Fix Turbolinks
+gem 'jquery-turbolinks'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'

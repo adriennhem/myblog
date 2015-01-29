@@ -1,10 +1,10 @@
 <div class="jumbotron">
-  <h1>Hello, world!</h1>
-  <p>...</p>
-  <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+  <h3>The blog for students who want to make a difference</h3>
+  <p>How many times did you hear or try to convince yourself that now is not the right time to start-up your own company?</p>
+  <p>In this blog you will find posts covering the main aspects of each business, tips and resources for being successful.</p>
 </div>
 
-
+<h2 class="page-header">Latest posts</h2>
 
 <% @posts.each do |post| %>
 <div class="post box">
@@ -14,7 +14,6 @@
         <div class="read-more">  
         <%= link_to 'Read More', post %>
         </div>
-<div class="addthis_sharing_toolbox"></div>
 </div>
 <% end %>
 
